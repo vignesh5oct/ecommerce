@@ -11,6 +11,8 @@ import {
   NavbarToggle,
 } from "flowbite-react";
 
+import { Link } from "react-router-dom";
+
 export function HeaderComponent() {
   return (
     <Navbar fluid rounded>
@@ -34,7 +36,11 @@ export function HeaderComponent() {
           <DropdownItem>Settings</DropdownItem>
           <DropdownItem>Earnings</DropdownItem>
           <DropdownDivider />
-          <DropdownItem>Sign out</DropdownItem>
+          <DropdownItem>
+            <Link to='/login'>
+              Sign In
+            </Link>
+          </DropdownItem>
         </Dropdown>
         <NavbarToggle />
       </div>

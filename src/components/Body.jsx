@@ -1,11 +1,18 @@
 import React from 'react'
-import Category from './Category'
-import Products from './Products'
+import { Store } from '../pages/store/Store';
+import SignIn from '../pages/auth/SignIn';
+import { HeaderComponent } from './HeaderComponent';
+import { FooterComponent } from './FooterComponent';
+import { Outlet } from 'react-router-dom';
 
-const Body = () => {
+export const Body = () => {
+   
   return (
-    <div>
-      <Products/>
+    <div >
+      <HeaderComponent/>
+      <Outlet/>
+      
+      <FooterComponent/>
     </div>
   )
 }

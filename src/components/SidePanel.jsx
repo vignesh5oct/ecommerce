@@ -15,7 +15,7 @@ import {
 } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from '@heroicons/react/20/solid'
-import Body from './Body'
+import BodyComponent from './BodyComponent'
 
 const sortOptions = [
   { name: 'Most Popular', href: '#', current: true },
@@ -310,7 +310,7 @@ export default function SidePanel() {
               {/* Product grid */}
               <div className="lg:col-span-3">
                 {/* Your content */}
-                <Body/>
+                <BodyComponent/>
               </div>
             </div>
           </section>
