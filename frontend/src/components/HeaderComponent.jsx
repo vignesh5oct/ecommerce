@@ -16,9 +16,11 @@ import { Link } from "react-router-dom";
 export function HeaderComponent() {
   return (
     <Navbar fluid rounded>
-      <NavbarBrand href="https://flowbite-react.com">
-        <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
-        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
+      <NavbarBrand>
+        <Link to='/'>
+          <img src="https://flowbite.com/docs/images/logo.svg" className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+          <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">Flowbite React</span>
+        </Link>
       </NavbarBrand>
       <div className="flex md:order-2">
         <Dropdown
@@ -29,16 +31,15 @@ export function HeaderComponent() {
           }
         >
           <DropdownHeader>
-            <span className="block text-sm">Bonnie Green</span>
-            <span className="block truncate text-sm font-medium">name@flowbite.com</span>
+            <span className="block text-sm"> </span>
+            <span className="block truncate text-sm font-medium"> </span>
           </DropdownHeader>
           <DropdownItem>Dashboard</DropdownItem>
           <DropdownItem>Settings</DropdownItem>
-          <DropdownItem>Earnings</DropdownItem>
           <DropdownDivider />
           <DropdownItem>
-            <Link to='/login'>
-              Sign In
+            <Link to='/signin'>
+              Sign In / Register
             </Link>
           </DropdownItem>
         </Dropdown>
